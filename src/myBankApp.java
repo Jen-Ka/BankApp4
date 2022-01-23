@@ -1,5 +1,6 @@
 import clients.Client;
 import staff.Administrator;
+import staff.Cashier;
 import staff.Consultant;
 import staff.Manager;
 
@@ -9,6 +10,9 @@ public class myBankApp {
         Client client = new Client("Иван", "Петров", 35, "1111 234325");
 
         client.giveMeTalon();
+        client.giveMeInfoAboutCredit();
+        client.giveMeContract();
+        client.giveMeMoney();
 
         Administrator administrator = new Administrator("Елена", "старший администратор");
 
@@ -24,6 +28,13 @@ public class myBankApp {
 
         manager.greetingClient();
         manager.getContract();
+
+        Cashier cashier = new Cashier("Ольга", "старший кассир");
+
+        cashier.greetingClient();
+        cashier.getMoney();
+
+
 
     }
 }
