@@ -15,6 +15,8 @@ public class myBankApp {
         client.giveMeMoney();
 
         Administrator administrator = new Administrator("Елена", "старший администратор");
+        administrator.setName("Елена");
+        administrator.setPosition("старший администратор");
 
         administrator.greetingClient();
         administrator.getTalon();

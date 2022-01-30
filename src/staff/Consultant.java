@@ -14,5 +14,12 @@ public class Consultant extends Personal {
         System.out.println("По вашим исходным данным вам подойдёт вот такой кредит");
     }
 
+    @Override
+    public void greetingClient() {
 
+    }
+
+    {
+        System.out.println("Добрый день! Меня зовут " + getName() + ". Я " + getPosition());
+    }
 }

@@ -56,6 +56,7 @@ public class Client {
     public void setPasport(String pasport) {
         this.pasport = pasport;
     }
+
     public Client(String firstName, String lastName, int age, String pasport) {
         this.firstName = firstName;
         this.lastName = lastName;
