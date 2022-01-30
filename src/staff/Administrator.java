@@ -13,6 +13,7 @@ public class Administrator extends Personal {
     static { //static добавлен по требованию компилятора (говорит, Warning:(12, 6) Class initializer may be 'static')
         System.out.println("Вот ваши талоны, ожидайте своей очереди, следите за табло!");
     }
+
 }
 
 

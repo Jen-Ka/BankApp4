@@ -5,11 +5,9 @@ public class Personal {
     private String name;    //ФИО
     private String position;    //должность
 
-    public Personal greetingClient() {  //Поприветствовать клиента
-        return null;
-    }
-    {
-        System.out.println("Добрый день! Меня зовут " + name + ". Я " + position);
+    public void greetingClient() {  //Поприветствовать клиента
+
+        System.out.println("Добрый день! Меня зовут " + getName() + ". Я " + getPosition());
     }
 
     public String getName() {
