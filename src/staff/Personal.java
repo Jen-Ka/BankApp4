@@ -8,6 +8,8 @@ public class Personal {
     public void greetingClient() {  //Поприветствовать клиента
 
         System.out.println("Добрый день! Меня зовут " + getName() + ". Я " + getPosition());
+
+
     }
 
     public String getName() {

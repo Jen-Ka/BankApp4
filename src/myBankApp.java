@@ -15,12 +15,14 @@ public class myBankApp {
 
         administrator.greetingClient();
         administrator.getTalon();
+        administrator.takeTalon();
         client.giveMeInfoAboutCredit();
 
         Consultant consultant = new Consultant("Мария", "консультант");
 
         consultant.greetingClient();
         consultant.getInfoAboutCredit();
+        consultant.getCountCredit();
         client.giveMeContract();
 
         Manager manager = new Manager("Антон", "менеджер кредитного отдела");

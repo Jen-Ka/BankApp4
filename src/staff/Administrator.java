@@ -9,6 +9,13 @@ public class Administrator extends Personal {
     public Administrator getTalon() {//получить у Администратора талоны к консультанту и менеджеру
         return null;
     }
+    public void takeTalon() {// Операции для ДЗ 5. 09.02.2022
+        int talon = 123;
+        int t = talon;
+        t = t - 10;
+
+            System.out.println("Ваш номер в очереди: "+t);
+        }
 
     static { //static добавлен по требованию компилятора (говорит, Warning:(12, 6) Class initializer may be 'static')
         System.out.println("Вот ваши талоны, ожидайте своей очереди, следите за табло!");

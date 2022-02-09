@@ -6,8 +6,11 @@ public class Consultant extends Personal {
         super(name, position);
     }
 
-    public void giveMeInfoAboutCredit() {//Попросить рассказать о кредитных продуктах и подобрать подходящий
-        System.out.println("Давайте подберём подходящий кредит?");
+    public void getCountCredit() {       //Операции для ДЗ 5. 09.02.2022
+        int Credit = 1500;
+        int Perceint = 10;
+        int Payment = (Credit*100)/Perceint;
+        System.out.println("Полная стоимость кредита будет " + Payment);
     }
 
     public void getInfoAboutCredit() {//Получить рекомендацию по подходящему кредиту
