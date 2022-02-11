@@ -1,3 +1,4 @@
+import calcs.Calculation;
 import clients.Client;
 import staff.Administrator;
 import staff.Cashier;
@@ -7,22 +8,30 @@ import staff.Manager;
 public class myBankApp {
 
     public static void main(String[] args) {
-        Client client = new Client("Иван", "Петров", 35, "1111 234325");
+        Client client = new Client("Иван", "Петров", 14, "1111 234325", false, true);
+        Administrator administrator = new Administrator("Елена", "старший администратор");
+        Calculation operRaschet = new Calculation();
+        Consultant consultant = new Consultant("Мария", "консультант");
+
+
 
         client.giveMeTalon();
 
-        Administrator administrator = new Administrator("Елена", "старший администратор");
-
         administrator.greetingClient();
+
         administrator.getTalon();
-        administrator.takeTalon();
+
+        operRaschet.takeTalon();
+
         client.giveMeInfoAboutCredit();
 
-        Consultant consultant = new Consultant("Мария", "консультант");
-
         consultant.greetingClient();
+
         consultant.getInfoAboutCredit();
-        consultant.getCountCredit();
+
+        operRaschet.giveCredit();
+
+        operRaschet.getCountCredit();
         client.giveMeContract();
 
         Manager manager = new Manager("Антон", "менеджер кредитного отдела");

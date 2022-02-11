@@ -3,8 +3,38 @@ package clients;
 public class Client {
     private String firstName;//имя клиента
     private String lastName;//фамилия клиента
-    private int age;//возраст
+    private int age;        //возраст
     private String pasport;//документ, удостоверяющий личность
+    private boolean hasCredit;// наличие кредита
+    private boolean hasRealty; // наличие недвижимости
+
+    public Client(String firstName, String lastName, int age, String pasport, boolean hasCredit, boolean hasRealty) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.pasport = pasport;
+        this.hasCredit = hasCredit;
+        this.hasRealty = hasRealty;
+
+    }
+
+    public boolean isHasCredit() {
+        return hasCredit;
+    }
+
+    public void setHasCredit(boolean hasCredit) {
+        this.hasCredit = hasCredit;
+    }
+
+    public boolean isHasRealty() {
+        return hasRealty;
+    }
+
+    public void setHasRealty(boolean hasRealty) {
+        this.hasRealty = hasRealty;
+    }
+
+
 
     public Client giveMeTalon() {    //заказать у Администратора талоны к консультанту и менеджеру
         return null;
@@ -57,10 +87,5 @@ public class Client {
         this.pasport = pasport;
     }
 
-    public Client(String firstName, String lastName, int age, String pasport) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
-        this.pasport = pasport;
-    }
+
 }
