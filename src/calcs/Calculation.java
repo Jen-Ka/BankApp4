@@ -4,6 +4,12 @@ import clients.Client;
 
 public class Calculation {
 
+    public void countClient(){
+        int startCountClient = 1;
+        System.out.println(++startCountClient);
+
+    }
+
     public void takeTalon() {// Операции для ДЗ 5. 09.02.2022
         int talon = 123;
         int t = talon;
@@ -21,18 +27,8 @@ public class Calculation {
         System.out.println("Ежемесячный платёж составит " + payment);
     }
 
-    public void giveCredit() {
-        Client client = new Client("Иван", "Петров", 14, "1111 234325", false, true);
-        if (client.getAge()>18 && client.isHasCredit()==false && client.isHasRealty()==true){
-            System.out.println("Кредит вам одобрен, будем оформлять?");
-        }
-        else {
-            System.out.println("Увы, кредит не одобрен");
-        }
 
 
-
-    }
 
 
 }
