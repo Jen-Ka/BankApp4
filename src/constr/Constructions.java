@@ -14,7 +14,7 @@ public class Constructions {
 
 
     }
-    public void checkIncome() {// Пример конструкции if для ДЗ 6. 09-16.02.2022
+    public void checkIncome() {// Пример конструкции if для ДЗ 6. 16.02.2022
         int monthSalary = 1000000/12;
         if (monthSalary<90000){
             System.out.println("Маловато у вас денежек, не хватит на кредит, не дадим!:)");
