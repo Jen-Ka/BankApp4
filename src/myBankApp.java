@@ -29,6 +29,10 @@ public class myBankApp {
 
         operRaschet.takeTalon();
 
+        constr.countClients();
+
+        constr.selectWindow();
+
         client.giveMeInfoAboutCredit();
 
         consultant.greetingClient();
@@ -40,6 +44,8 @@ public class myBankApp {
         operRaschet.getCountCredit();
 
         constr.checkIncome();
+
+        constr.monthPay();
 
         client.giveMeContract();
 
