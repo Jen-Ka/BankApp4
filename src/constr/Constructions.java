@@ -43,8 +43,13 @@ public class Constructions {
     }
 
     public void selectWindow() { // пример конструкции for для ДЗ 6. 18.02.2022 - определение свободного окна оператора банка
-        for (int i = 1; i < 5; i++) {
-            System.out.println("Вы можете пройти к окну № "+ i);
+        //for (int i = 1; i < 5; i++) {
+        //    System.out.println("Вы можете пройти к окну № "+ i);
+        //}
+        for (int i = 1; i <= 5; i++) {
+            for (int r = 1; r <= 4; r++) {
+                System.out.println("Вы можете пройти в зал № " + i + ", к окну № " + r);
+            }
         }
 
     }
