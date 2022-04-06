@@ -4,8 +4,8 @@ import clients.Client;
 
 public class Constructions {
 
-    public void giveCredit() { // Пример конструкции if-else для ДЗ 6. 16.02.2022 - проверка возможности выдачи кредита по условиям
-        Client client = new Client("Иван", "Петров", 14, "1111 234325", false, true);
+    public void giveCredit(Client client) { // Пример конструкции if-else для ДЗ 6. 16.02.2022 - проверка возможности выдачи кредита по условиям
+        //Client client = new Client("Иван", "Петров", 14, "1111 234325", false, true);
         if (client.getAge() > 18 && !client.isHasCredit() && client.isHasRealty()) {
             System.out.println("Кредит вам одобрен, будем оформлять?");
         } else {
@@ -14,14 +14,14 @@ public class Constructions {
 
 
     }
-    public void checkIncome() {// Пример конструкции if для ДЗ 6. 16.02.2022 - типа "расчёт ежемес. дохода"
+    public void checkIncome(Client client) {// Пример конструкции if для ДЗ 6. 16.02.2022 - типа "расчёт ежемес. дохода"
         int monthSalary = 1000000/12;
         if (monthSalary<90000){
             System.out.println("Маловато у вас денежек, не хватит на кредит, не дадим!:)");
         }
     }
 
-    public void monthPay(){// Пример конструкции while для ДЗ 6. 18.02.2022 - расчёт остатка по кредиту
+    public void monthPay(Client client){// Пример конструкции while для ДЗ 6. 18.02.2022 - расчёт остатка по кредиту
         int a = 25000;
         int b = 5000;
 
@@ -32,7 +32,7 @@ public class Constructions {
 
     }
 
-    public void countClients() {// Пример конструкции do-while для ДЗ 6. 18.02.2022 - расчёт количества человек в очереди
+    public void countClients(Client client) {// Пример конструкции do-while для ДЗ 6. 18.02.2022 - расчёт количества человек в очереди
         int quantity = 10;
         do {
             quantity--;
@@ -42,7 +42,7 @@ public class Constructions {
 
     }
 
-    public void selectWindow() { // пример конструкции for для ДЗ 6. 18.02.2022 - определение свободного окна оператора банка
+    public void selectWindow(Client client) { // пример конструкции for для ДЗ 6. 18.02.2022 - определение свободного окна оператора банка
         //for (int i = 1; i < 5; i++) {
         //    System.out.println("Вы можете пройти к окну № "+ i);
         //}
