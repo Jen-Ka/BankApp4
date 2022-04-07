@@ -7,11 +7,7 @@ public class Administrator extends Personal {
         super(name, position);
     }
 
-    public Administrator getTalon() {//получить у Администратора талоны к консультанту и менеджеру
-        return null;
-    }
-
-    static { //static добавлен по требованию компилятора (говорит, Warning:(12, 6) Class initializer may be 'static')
+    public void getTalon() {//получить у Администратора талоны к консультанту и менеджеру
         System.out.println("Вот ваши талоны, ожидайте своей очереди, следите за табло!");
     }
 

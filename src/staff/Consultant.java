@@ -17,9 +17,4 @@ public class Consultant extends Personal {
     public void greetingClient() {
 
     }
-
-
-    {
-        System.out.println("Добрый день! Меня зовут " + getName() + ". Я " + getPosition());
-    }
 }

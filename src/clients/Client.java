@@ -35,31 +35,8 @@ public class Client {
     }
 
 
-
-    public Client giveMeTalon() {    //заказать у Администратора талоны к консультанту и менеджеру
-        return null;
-    }
-    static {//static добавлен по требованию компилятора (говорит, Warning:(12, 6) Class initializer may be 'static')
-        System.out.println("Добрый день! Я хочу получить консультацию по кредиту и оформить его, дайте талон к консультанту и менеджеру?");
-    }
-    public Client giveMeInfoAboutCredit() {//Попросить рассказать о кредитных продуктах и подобрать подходящий
-        return null;
-    }
-    static {//static добавлен по требованию компилятора (говорит, Warning:(12, 6) Class initializer may be 'static')
-        System.out.println("Мне нужен кредит на ремонт, давайте подберём подходящий?");
-    }
-
-    public Client giveMeContract() {//оформить договор на получение кредита
-        return null;
-    }
-    static {//static добавлен по требованию компилятора (говорит, Warning:(12, 6) Class initializer may be 'static')
-        System.out.println("Оформите мне, пожалуйста, договор на получение кредита");
-    }
-    public Client giveMeMoney() {//подать заявку на получение наличных в кассе
-        return null;
-    }
-    static {//static добавлен по требованию компилятора (говорит, Warning:(12, 6) Class initializer may be 'static')
-        System.out.println("Я оформил кредит, выдайте мне деньги.");
+    public void speakOut(String s) {    //поговорить с сотрудниками о разном (в "s" в main  просто пишем нужные слова в каждый момент времени)
+        System.out.println(s);
     }
 
     public String getFirstName() {

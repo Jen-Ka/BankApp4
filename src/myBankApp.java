@@ -19,9 +19,7 @@ public class myBankApp {
         Calculation operRaschet = new Calculation();
         Constructions constr = new Constructions();
 
-
-
-        client.giveMeTalon();
+        client.speakOut("Добрый день! Я хочу получить консультацию по кредиту и оформить его, дайте талон к консультанту и менеджеру?");
 
         administrator.greetingClient();
 
@@ -29,35 +27,35 @@ public class myBankApp {
 
         operRaschet.takeTalon();
 
-        constr.countClients();
+        constr.countClients(4);
 
-        constr.selectWindow();
+        constr.selectWindow(2, 2);
 
-        client.giveMeInfoAboutCredit();
+        client.speakOut("Мне нужен кредит на ремонт, давайте подберём подходящий?");
 
         consultant.greetingClient();
 
         consultant.getInfoAboutCredit();
 
-        constr.giveCredit();
+        constr.giveCredit(19, false, true);
 
         operRaschet.getCountCredit();
 
-        constr.checkIncome();
+        constr.checkIncome(120000);
 
-        constr.monthPay();
-
-        client.giveMeContract();
+        client.speakOut("Оформите мне, пожалуйста, договор на получение кредита");
 
         manager.greetingClient();
 
         manager.getContract();
 
-        client.giveMeMoney();
+        client.speakOut("Я оформил кредит, выдайте мне деньги.");
 
         cashier.greetingClient();
 
         cashier.getMoney();
+
+        constr.monthPay(25000, 5000);
 
 
 
