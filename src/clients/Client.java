@@ -64,5 +64,9 @@ public class Client {
         this.pasport = pasport;
     }
 
-
+    @Override
+    public String toString() {
+        return "Клиент " + firstName + " " + lastName + ", возраст " + age + " лет, паспорт "
+                + pasport + ", наличие кредита: " + hasCredit + ", наличие недвижимости: " + hasRealty;
+    }
 }

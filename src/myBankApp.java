@@ -1,6 +1,7 @@
 import calcs.Calculation;
 import clients.Client;
 import constr.Constructions;
+import massivy.MassClients;
 import staff.Administrator;
 import staff.Cashier;
 import staff.Consultant;
@@ -18,6 +19,7 @@ public class myBankApp {
         Cashier cashier = new Cashier("Ольга", "старший кассир");
         Calculation operRaschet = new Calculation();
         Constructions constr = new Constructions();
+        MassClients massClients = new MassClients();
 
         client.speakOut("Добрый день! Я хочу получить консультацию по кредиту и оформить его, дайте талон к консультанту и менеджеру?");
 
@@ -28,6 +30,8 @@ public class myBankApp {
         operRaschet.takeTalon();
 
         constr.countClients(4);
+
+        //massClients.printArrayClients(); //не сумела передать сюда ничего из класса с массивами
 
         constr.selectWindow(2, 2);
 
