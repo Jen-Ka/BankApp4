@@ -12,6 +12,8 @@ public class ServiceClient {
 
         System.out.println("Test for branches - this for main " + t + " еее ");
 
+        System.out.println("TEST#3");
+
     }
 
 }
