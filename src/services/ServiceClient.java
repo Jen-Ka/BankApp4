@@ -7,10 +7,10 @@ public class ServiceClient {
         int t = 10;
 
         do {
-            t++;
-        } while (t>=1);
+            t--;
+        } while (t<=10);
 
-        System.out.println("Test for branches - this for main" + t);
+        System.out.println("Test for branches - this for main " + t + " еее ");
 
     }
 
