@@ -2,10 +2,7 @@ import calcs.Calculation;
 import clients.Client;
 import constr.Constructions;
 import massivy.MassClients;
-import staff.Administrator;
-import staff.Cashier;
-import staff.Consultant;
-import staff.Manager;
+import staff.*;
 
 public class myBankApp {
 
@@ -20,14 +17,16 @@ public class myBankApp {
         Calculation operRaschet = new Calculation();
         Constructions constr = new Constructions();
         MassClients massClients = new MassClients();
+        InterfacePersonal pers = new Cashier("Test", "doljnost");
+
 
         client.speakOut("Добрый день! Я хочу получить консультацию по кредиту и оформить его, дайте талон к консультанту и менеджеру?");
 
-        administrator.greetingClient();
+        administrator.greetingClient(); //администратор приветствует клиента
 
-        administrator.getTalon();
+        administrator.getTalon(); // выдаёт талон  менеджеру и консультанту
 
-        operRaschet.takeTalon();
+        operRaschet.takeTalon(); //
 
         constr.countClients(4);
 
@@ -61,7 +60,7 @@ public class myBankApp {
 
         constr.monthPay(25000, 5000);
 
-
+        pers.printBalance(456);
 
     }
 }

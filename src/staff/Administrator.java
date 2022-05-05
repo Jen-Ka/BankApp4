@@ -1,7 +1,7 @@
 package staff;
 
 
-public class Administrator extends Personal {
+public class Administrator extends Personal implements InterfacePersonal{
 
     public Administrator(String name, String position) {
         super(name, position);
