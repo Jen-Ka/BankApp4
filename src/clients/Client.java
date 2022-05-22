@@ -7,15 +7,21 @@ public class Client {
     private String pasport;//документ, удостоверяющий личность
     private boolean hasCredit;// наличие кредита
     private boolean hasRealty; // наличие недвижимости
+    private String clientId;   // внутренний id клиента
 
-    public Client(String firstName, String lastName, int age, String pasport, boolean hasCredit, boolean hasRealty) {
+    public Client(String firstName, String lastName, int age, String pasport, boolean hasCredit, boolean hasRealty, String clientId) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
         this.pasport = pasport;
         this.hasCredit = hasCredit;
         this.hasRealty = hasRealty;
+        this.clientId = clientId;
 
+    }
+
+    public String getClientId() {
+        return clientId;
     }
 
     public boolean isHasCredit() {
@@ -67,6 +73,6 @@ public class Client {
     @Override
     public String toString() {
         return "Клиент " + firstName + " " + lastName + ", возраст " + age + " лет, паспорт "
-                + pasport + ", наличие кредита: " + hasCredit + ", наличие недвижимости: " + hasRealty;
+                + pasport + ", наличие кредита: " + hasCredit + ", наличие недвижимости: " + hasRealty + ", id: " + clientId;
     }
 }
