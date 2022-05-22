@@ -4,6 +4,7 @@ import clients.Client;
 import services.ServiceClient;
 import java.util.List;
 import java.util.Queue;
+import java.util.Random;
 
 public class ExamQueCollectionApp {
 
@@ -11,10 +12,15 @@ public class ExamQueCollectionApp {
 
         ServiceClient serviceClient = new ServiceClient();
 
-        int numQueue1 = serviceClient.getNumQueue("Открыть счёт", "222");
+        Random r = new Random();
+        for (int i = 0; i < r.nextInt(10); i++){
+            serviceClient.getNumQueue("Снять деньги", String.valueOf(i));
+        }
+
+        /*int numQueue1 = serviceClient.getNumQueue("Открыть счёт", "222");
         int numQueue2 = serviceClient.getNumQueue("Открыть счёт", "666");
         int numQueue3 = serviceClient.getNumQueue("Открыть счёт", "111");
-        int numQueue4 = serviceClient.getNumQueue("Открыть счёт", "999");
+        int numQueue4 = serviceClient.getNumQueue("Открыть счёт", "999");*/ // вместо списка клиентов сделан рандомизатор выше
 
         //List<Client> clients = serviceClient.getClients(); // в конечном варианте с удалением клиента этот список нам не нужны, использовались для принтинфо
         //List<Client> tickets = serviceClient.getTickets(); параметр перенесён в вызов метода process
@@ -29,7 +35,7 @@ public class ExamQueCollectionApp {
     private static void process(List<Client> tickets) {
         while (tickets.size()>0){
             Client client = tickets.get(0);
-            System.out.println("Клиент: " + client);
+            System.out.println("Обслужен клиент: " + client);
             tickets.remove(client);
         }
 

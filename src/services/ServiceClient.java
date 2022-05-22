@@ -15,11 +15,11 @@ import java.util.Queue;
 
 public class ServiceClient {
 
-    private final Client CLIENT_1 = new Client("Петров", "Пётр", 45, "12311456", false, false, "222");
-    private final Client CLIENT_2 = new Client("Иванов", "Иван", 18, "12322456", true, true, "333");
-    private final Client CLIENT_3 = new Client("Сидоров", "Сергей", 16, "12344456", false, false, "666");
-    private final Client CLIENT_4 = new Client("Кузнецов", "Константин", 88, "12355456", false, true, "777");
-    private final Client CLIENT_5 = new Client("Юрьев", "Игорь", 43, "12377456", false, true, "888");
+    private final Client CLIENT_1 = new Client("Петров", "Пётр", 45, "12311456", false, false, "1");
+    private final Client CLIENT_2 = new Client("Иванов", "Иван", 18, "12322456", true, true, "2");
+    private final Client CLIENT_3 = new Client("Сидоров", "Сергей", 16, "12344456", false, false, "3");
+    private final Client CLIENT_4 = new Client("Кузнецов", "Константин", 88, "12355456", false, true, "4");
+    private final Client CLIENT_5 = new Client("Юрьев", "Игорь", 43, "12377456", false, true, "5");
 
     private List<Client> clients = List.of(CLIENT_1, CLIENT_2, CLIENT_3, CLIENT_4, CLIENT_5);
     private List<Client> tickets = new ArrayList<>(); //вариант с List
