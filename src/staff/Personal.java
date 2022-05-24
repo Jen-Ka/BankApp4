@@ -1,11 +1,12 @@
 package staff;
 
-public class Personal {
+public class Personal implements InterfacePersonal {
 
     private String name;    //ФИО
     private String position;    //должность
 
-    public void greetingClient() {  //Поприветствовать клиента
+    @Override
+    public void greetingClient() {  //Поприветствовать клиента - 05.05.2022 переопределён из интефейса
 
         System.out.println("Добрый день! Меня зовут " + getName() + ". Я " + getPosition());
 
