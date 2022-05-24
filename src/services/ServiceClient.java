@@ -44,9 +44,11 @@ public class ServiceClient {
         return null;
     }
 
+CollectionsAppExample
     public List<Client> getClients() {
         return clients;
     }
+
 
     public List<Client> getTickets() {
         return tickets;
