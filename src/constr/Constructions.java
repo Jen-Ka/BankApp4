@@ -1,7 +1,7 @@
 package constr;
 
 import clients.Client;
-import massivy.MassClients;
+//import massivy.MassClients;
 
 public class Constructions {
 
